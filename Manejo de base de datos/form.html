@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html class="IE no-js"> <![endif]-->
+<!--[if IE 7 ]>    <html class="IE no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html class="IE no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html class="IE no-js"> <![endif]-->
+<!--[if IE 10 ]>    <html class="IE no-js"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/Registro.css" rel="stylesheet">
+		<link href="css/EstiloBase.css" rel="stylesheet">
+	</head>
+	<body>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<header>
+			<div id="header_logo">
+				<img src="img/brain_white.png">
+				<h1>SmartClass</h1>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section>
+			<form id="formulario_registro" action="registraAlumno.php" method="POST">
+				<h2>Registro</h2>
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre" required/>
+				<label for="codigo">Codigo</label>
+				<input type="number" id="codigo" name="codigo" min="0" step="1" pattern="\d+" required/>
+				<label for="carrera">Carrera</label>
+				<select id="carrera" name="ingenierias">
+					<option value ="computacion">Ing. Computación</option>
+					<option value ="informatica">Ing. Informatica</option>
+					<option value ="biomedica">Ing. Biomedica</option>
+					<option value ="electronica">Ing. en Com. y Elect.</option>
+				</select>
+				<label for="mail">Correo</label> 
+				<input type="email" id="mail" name="mail" placeholder="tucorreo@dominio.com" required/>
+				<label for="pass">Contraseña</label>
+				<input type="password" id="pass" name="pass" required/>
+				<button id="enviar" type="submit">Enviar</button>
+			</form>
+		</section>
+		<div class="clear"></div>
+		<footer>
+			<div></div>
+			<p id="copyright">© TwoHundred 2013</p>
+		</footer>
+	</body>
+</html>	

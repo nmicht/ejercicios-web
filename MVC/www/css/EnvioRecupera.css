@@ -1,0 +1,42 @@
+section{
+    width: 100%;
+}
+
+h2, p{
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;  
+    position: relative;  
+}
+
+#envio{
+    position: relative;
+    margin: 90px auto;
+    width: 350px;
+}
+
+#enviar{
+    position: relative;
+    left: 39%;
+    margin: 16% auto;
+}
+
+@media ( max-width: 380px ){
+    header #header_logo img{
+        padding-left: 10px;
+    }
+    #envio{
+        position: relative;
+        margin: 70px auto;
+        width: 220px;
+    }
+    #envio h2, p{
+        position: relative;
+        text-align: center;
+    }
+    #enviar{    
+     left: 33%;    
+    }
+}
+
+

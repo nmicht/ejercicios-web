@@ -1,0 +1,66 @@
+header #header_opciones{
+    float: right;
+    width: 240px;
+    padding: 3.3em 2em 0em 0em;
+}
+
+#area_alumnos{
+    width: 340px;
+    margin: auto;
+}
+
+#area_alumnos a:hover{
+    font-weight: lighter;
+    text-decoration: none;
+    color: #B40404;
+}
+
+#area_alumnos a:active{
+    color: #FE2E2E;
+}
+
+#chbx{
+    margin: 0.3em;
+}
+
+#estatus_ac, #estatus_in{
+    margin: 0.3em 0.3em 0.5em 2.3em;
+}
+
+@media ( max-width: 605px ){
+    header{
+        height: 120px;
+    }
+    
+    div.container-fluid{
+        padding-top: 130px;
+    }
+                
+    header #header_opciones{
+        float: left;
+        width: 240px;
+        padding: 0em 0em 0em 3em;
+    }
+
+    header #header_opciones #nav_cuenta{
+        float: left;
+        padding-top: 0.5em;
+    }
+
+    header #header_opciones p{
+        float: left;
+        color: #FFF;
+        margin: 0px;
+        padding-top: 0.7em;
+    }
+}
+
+@media ( max-width: 340px ){
+    header #header_logo img{
+         padding-left: 0;
+    }
+    
+    header #header_opciones{
+        padding-left: 0;
+    }
+}

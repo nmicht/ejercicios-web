@@ -1,0 +1,62 @@
+body{
+	min-width: 550px;
+}
+
+header #header_opciones{
+    float: right;
+    width: 240px;
+    padding: 3.3em 2em 0em 0em;
+}
+
+#periodo_asistencias{
+    padding: 0.8em 0;
+    width: 290px;
+    margin: auto;
+}
+
+#periodo_fechas{
+    display: inline;
+    margin: auto;
+    padding: 0 1.2em;
+}
+
+#periodo_fechas p{
+    display: inline;
+    font-size: 1.2em;
+}
+
+#lista_asistencias{
+    margin-top: 0.5em;
+}
+
+#chbx{
+    margin: 0.3em;
+}
+
+@media ( max-width: 605px ){
+    header{
+        height: 120px;
+    }
+    
+    div.container-fluid{
+        padding-top: 130px;
+    }
+                
+    header #header_opciones{
+        float: left;
+        width: 240px;
+        padding: 0em 0em 0em 3em;
+    }
+
+    header #header_opciones #nav_cuenta{
+        float: left;
+        padding-top: 0.5em;
+    }
+
+    header #header_opciones p{
+        float: left;
+        color: #FFF;
+        margin: 0px;
+        padding-top: 0.7em;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/LogIn.css" rel="stylesheet">		
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/forms.js"></script>
+		<style type="text/css">
+			.error{
+				display: block;
+			    color:red;
+			    font-style: italic; 
+			    font-size: .8em;
+			    margin-bottom: 4px; 
+			    text-align: center;
+			}
+		</style>
+		<header>
+			<img src="img/brain_white.png" width="67">
+			<h1>SmartClass</h1>
+		</header>
+		<aside id="izquierda">
+			<form id="formulario_inicio">
+				<h2>Iniciar sesión</h2> 
+				<input id="codigo" type="text" placeholder="Código" />
+				<input id="pass" type="password" placeholder="Contraseña" /> 
+				<input type="button" class="btn" id="entrar" value="Entrar" onclick="validarFormInicio()"/>
+			</form>
+		</aside>
+		<aside id="derecha">
+			<div></div>
+			<p>SmartClass es una herramienta diseñada con el fin de administrar cursos academicos de forma ágil y sencilla.</p>
+		</aside>
+		<div class="clear"></div>
+		<footer>
+			<p>¿Olvidaste tu contraseña?  <a href="Recupera.html">Recuperala</a></p>
+			<div></div>
+			<p id="copyright">© TwoHundred 2013</p>
+		</footer>
+	</body>
+</html>	

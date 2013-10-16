@@ -1,0 +1,137 @@
+header #header_opciones{
+    float: right;
+    width: 240px;
+    padding: 3.3em 2em 0em 0em;
+}
+
+
+section p{
+    position: relative;
+    margin-top: 4%;
+    color: #610B0B;
+    padding-bottom: 5%;
+    font-size: 2.1em;
+}
+
+#evaluacion{
+    width: 50%;
+    min-width: 340px;
+    margin-left: 19%;
+}
+
+#evaluacion h3{
+    margin: 4% auto;
+}
+
+#evaluacion table{
+    margin-bottom: 5%;
+}
+
+#evaluacion a:hover{
+    font-weight: lighter;
+    text-decoration: none;
+    color: #B40404;
+}
+
+#evaluacion a:active{
+    color: #FE2E2E;
+}
+
+.checkbox_columna{
+    width: auto;
+}
+
+#div_checkbox_hoja{
+    margin: 16px;
+}
+
+#columnas_rubro{
+    width: 30px;
+    margin-right: 200px;
+}
+
+
+button#guardar_evaluacion{
+    float: right;
+    /*margin-left: 20%;*/
+}
+
+button#guardar_rubro{
+    margin-top: 2%;
+}
+
+
+form#rubro_evaluacion{
+    width: 310px;
+    margin: auto;
+}
+
+section li img{
+    visibility: hidden;
+}
+
+section li:hover img{
+    visibility: visible;
+    margin-right: 10px;
+}
+
+
+
+/*========================== MEDIAS PARA TODO CURSO PROFESOR ====================================*/
+@media ( max-width: 1308px ){
+    button#guardar_evaluacion{
+        margin-left: 0%;
+    }
+
+}
+
+@media ( max-width: 605px ){
+
+    header{
+        height: 120px;
+    }
+    
+    div.container-fluid{
+        padding-top: 130px;
+    }
+                
+    header #header_opciones{
+        float: left;
+        width: 240px;
+        padding: 0em 0em 0em 3em;
+    }
+
+    header #header_opciones #nav_cuenta{
+        float: left;
+        padding-top: 0.5em;
+    }
+
+    header #header_opciones p{
+        float: left;
+        color: #FFF;
+        margin: 0px;
+        padding-top: 0.7em;
+    }
+}
+
+@media ( max-width:436px ){
+    #evaluacion{
+        margin-left: 4%; 
+    }
+}
+
+@media ( max-width:370px ){
+    #evaluacion{
+        margin-left: 0%; 
+    }
+}
+
+@media ( max-width: 340px ){
+    header #header_logo img{
+         padding-left: 0;
+    }
+    
+    header #header_opciones{
+        padding-left: 0;
+    }
+}

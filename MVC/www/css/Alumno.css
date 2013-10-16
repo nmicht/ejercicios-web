@@ -1,0 +1,52 @@
+header #header_opciones{
+    float: right;
+    width: 155px;
+    padding: 3.3em 2em 0em 0em;
+ }
+
+#alumno_calificaciones{
+	width: 40%;
+	margin: 2% auto;
+}
+
+th,td{
+	width: auto;
+}
+
+@media ( max-width: 550px ){
+	header{
+		height: 120px;
+	}
+	
+	div.container-fluid{
+		padding-top: 130px;
+	}
+
+	header #header_opciones{
+	    float: left;
+	    width: 185px;
+	    padding: 0em 0em 0em 3em;
+	}
+				
+	header #header_opciones #nav_cuenta{
+	    float: left;
+	    padding-top: 0.5em;
+	}
+
+	header #header_opciones p{
+	    float: left;
+	    color: #FFF;
+	    margin: 0px;
+	    padding-top: 0.7em;
+	}
+}
+
+@media ( max-width: 340px ){
+	header #header_logo img{
+	    padding-left: 0;
+	}
+			    
+	header #header_opciones{
+		padding-left: 0;
+   }
+}

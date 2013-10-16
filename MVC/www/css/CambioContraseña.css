@@ -1,0 +1,53 @@
+section{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+input{
+    width: 330px;
+}
+
+#formulario{
+    position: relative;
+    margin: 50px auto;
+    width: 350px;
+}
+
+#formulario h2, p{
+    position: relative;
+    text-align: center;
+}
+
+@media ( max-width: 605px ){
+    header #header_logo img{
+        padding-left: 10px;
+    }
+    div.container-fluid{
+        padding-top: 130px;
+    }
+    #formulario{
+        position: relative;
+        margin: 70px auto;
+        width: 220px;
+    }
+    #formulario h2, p{
+        position: relative;
+        text-align: center;
+    }
+    label{
+        padding: 0px 0px 0px 0px;
+    }
+    input{
+        width: 210px;
+        position: relative;
+        left: 2%;
+    }
+    .btn{    
+     left: 33%;    
+    }
+}

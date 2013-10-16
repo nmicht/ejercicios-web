@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/AltaAlumno.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/forms.js"></script>
+		<div id="wrapper">
+			<header>
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<h1>SmartClass</h1>
+				</div>
+				<div id="header_opciones">
+					<ul id="nav_cuenta">
+						<li><a href=""><img src="img/appbar.cog.png"></a>
+							<ul id="opciones_cuenta">
+								<li><a href="CambioContraseña.html">Cambiar Constraseña</a></li>
+								<li><a href="index.html">Salir</a></li>
+						    </ul>
+						</li>
+					</ul>
+					<p>Bienvenido Profesor@ &lt;Nombre&gt;</p>
+				</div>
+				<div class="clear"></div>				
+			</header>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<section>
+						<div id="alta_simple">
+							<form id="formulario_registro" action="index.php?ctl=alumnos&act=alta" method="POST">
+								<h2>Registro Alumno</h2>
+								<label for="nombre">Nombre*</label>
+								<input type="text" id="nombre" name="nombre" required/>
+								<label for="codigo">Código*</label>
+								<input type="text" id="codigo" name="codigo" required/>
+								<label for="ingenierias">Carrera*</label>
+								<select id="carrera" name="ingenierias" required>
+									<option value="0" disabled selected>Selecciona Carrera</option>
+									<option value ="computacion">Ing. Computación</option>
+									<option value ="informatica">Ing. Informatica</option>
+									<option value ="biomedica">Ing. Biomedica</option>
+									<option value ="electronica">Ing. en Com. y Elect.</option>
+								</select>
+								<label for="mail">Correo*</label> 
+								<input type="email" id="mail" name="mail" placeholder="tucorreo@dominio.com" required/>
+								<label for="pass">Contraseña*</label>
+								<input type="password" id="pass" name="pass" required/>
+								<label for="celular">Celular</label>
+								<input type="text" id="celular" name="celular"/>
+								<label for="cuenta_git">Cuenta de Github</label>
+								<input type="text" id="cuenta_git" name="cuenta_git"/>
+								<label for="pagina_web">Pagina Web</label>
+								<input type="text" id="pagina_web" name="pagina_web"/>
+								<input class="btn" type="button" value="Enviar" onclick="validarFormAltaAlumno()"/>
+							</form>
+						</div>
+						<div id="alta_archivo">
+							<div id="contenedor_archivo">
+								<h2>Registro Archivo</h2>
+								<input id="archivo" name="archivo" type="file" accept=".txt"/>
+								<input class="btn" type="button" value="Enviar"/>
+							<Idiv>
+						</div>
+					</section>
+				</div>
+			</div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>	
+		</div>
+	</body>
+</html>	

@@ -1,0 +1,61 @@
+section{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+#formulario{
+    position: relative;
+    margin: 90px auto;
+    width: 350px;
+}
+
+#formulario h2, label,p{
+    position: relative;
+    text-align: center;
+
+}
+
+label{
+    padding: 10% 0 0 0;
+}
+
+input{
+    width: 330px;
+}
+
+#enviar{
+    position: relative;
+    left: 42%;
+    margin: 6% auto;
+}
+
+@media ( max-width: 380px ){
+    header #header_logo img{
+        padding-left: 10px;
+    }
+    #formulario{
+        position: relative;
+        margin: 70px auto;
+        width: 220px;
+    }
+    #formulario h2, label,p{
+        position: relative;
+        text-align: center;
+
+    }
+    input{
+        width: 200px;
+        position: relative;
+        left: 2%;
+    }
+    #enviar{    
+     left: 37%;    
+    }
+}
+
+
