@@ -4,27 +4,27 @@
 		<title>SmartClass</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="css/EstiloBase.css" rel="stylesheet">
-		<link href="css/AltaAlumno.css" rel="stylesheet">
+		<link href="./www/css/bootstrap.css" rel="stylesheet">
+		<link href="./www/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="./www/css/EstiloBase.css" rel="stylesheet">
+		<link href="./www/css/AltaAlumno.css" rel="stylesheet">
 	</head>
 	<body>
 		<!--[if lt IE 9]>
 			<script src="css3-mediaqueries.js"></script>
 		<![endif]-->
-		<script src="js/bootstrap.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/forms.js"></script>
+		<script src="./www/js/bootstrap.js"></script>
+		<script src="./www/js/modernizr.js"></script>
+		<script src="./www/js/forms.js"></script>
 		<div id="wrapper">
 			<header>
 				<div id="header_logo">
-					<img src="img/brain_white.png">
+					<img src="./www/img/brain_white.png">
 					<h1>SmartClass</h1>
 				</div>
 				<div id="header_opciones">
 					<ul id="nav_cuenta">
-						<li><a href=""><img src="img/appbar.cog.png"></a>
+						<li><a href=""><img src="./www/img/appbar.cog.png"></a>
 							<ul id="opciones_cuenta">
 								<li><a href="CambioContraseña.html">Cambiar Constraseña</a></li>
 								<li><a href="index.html">Salir</a></li>
@@ -63,7 +63,8 @@
 								<input type="text" id="cuenta_git" name="cuenta_git"/>
 								<label for="pagina_web">Pagina Web</label>
 								<input type="text" id="pagina_web" name="pagina_web"/>
-								<input class="btn" type="button" value="Enviar" onclick="validarFormAltaAlumno()"/>
+								<!-- <input class="btn" type="button" value="Enviar" onclick="validarFormAltaAlumno()"/> -->
+								<button type="submit">Submit</button>
 							</form>
 						</div>
 						<div id="alta_archivo">

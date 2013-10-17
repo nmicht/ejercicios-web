@@ -10,7 +10,7 @@ class AlumnoMdl{
 	}
 
 	function alta($nombre, $codigo, $carrera, $correo){
-		echo "<br>debug: Entro a la alta del alumno en el modelo";
+		//echo "<br>debug: Entro a la alta del alumno en el modelo";
 		$query = 
 				"INSERT INTO alumno
 				(nombre, correo)
@@ -26,6 +26,18 @@ class AlumnoMdl{
 		}
 		elseif($r === FALSE)
 			return FALSE;
+	}
+
+	function lista(){
+		//echo "<br>debug: Entro a la alta del alumno en el modelo";
+		$query = 'SELECT * FROM alumno';
+
+		$r = $this -> driver -> query($query);
+
+		while($row = $r -> fetch_assoc())
+			$rows[] = $row;
+
+		return $rows;
 	}
 
 }
