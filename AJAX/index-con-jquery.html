@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Probando AJAX</title>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<h1>Este es un contenido estático</h1>
+<button type="button" onclick="muestra()">Probar</button>
+<select id="lista" onChange="mostrarAlumno(this.value)">
+	<option value="0">Selecciona una opción</option>
+</select>
+
+
+<script type="text/javascript">
+function mostrarAlumno(id){
+	$.ajax({
+		type: 'POST',
+		data: {idalumno:id},
+		url: 'datosAlumno.php',
+		dataType: 'json',
+		success: function(json){
+			console.log(json);
+		}
+	});
+}
+
+function muestra(){
+	$.ajax({
+		url:'consulta.php',
+		dataType: 'json',
+		success: function(json){
+			var select = document.getElementById("lista");
+			for(i in json){
+				var texto = document.createTextNode(json[i].nombre);
+				var option = document.createElement('option');
+				option.setAttribute('value',json[i].id);
+				option.appendChild(texto);
+				select.appendChild(option);
+			}
+		}
+	});
+}
+
+
+
+</script>
+</body>
+</html>
