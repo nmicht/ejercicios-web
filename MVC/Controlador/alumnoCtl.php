@@ -30,6 +30,8 @@ class AlumnoCtl{
 
 						//Obtener la vista
 						$vista = file_get_contents("Vista/ModificarEliminar.html");
+						$header = file_get_contents("Vista/cabecera.html");
+						$footer = file_get_contents("Vista/pie.html");
 
 						//Obtengo la fila de la tabla
 						$inicio_fila = strrpos($vista,'<tr>');
@@ -46,13 +48,27 @@ class AlumnoCtl{
 							//$new_fila = str_replace('{nombre}', $row['nombre'], $new_fila);
 
 							//Reemplazo con un diccionario
-							$diccionario = array('{codigo}' => $row['id'], '{nombre}' => $row['nombre']);
+							$diccionario = array(
+								'{codigo}' => $row['id'], 
+								'{nombre}' => $row['nombre']);
+
 							$new_fila = strtr($new_fila,$diccionario);
 							$filas .= $new_fila;
 						}
 						
 						//Reemplazo en mi vista una fila por todas las filas
 						$vista = str_replace($fila, $filas, $vista);
+
+
+						//Reemplazo con un diccionario
+						$diccionario = array(
+							'{pagina}' => 'Alumnos', 
+							'{extras}' => '',
+							'{usuario}' => 'michelle');
+
+						$header = strtr($header,$diccionario);
+
+						$vista = $header . $vista . $footer;
 
 						//Mostrar la vista
 						echo $vista;

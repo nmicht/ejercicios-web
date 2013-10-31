@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Probando AJAX</title>
+	<script type="text/javascript" src="ajax.js"></script>
+</head>
+<body>
+<h1>Este es un contenido estático</h1>
+<button type="button" onclick="muestra()">Probar</button>
+<select id="lista">
+	<option value="0">Selecciona una opción</option>
+</select>
+
+
+<script type="text/javascript">
+
+function muestra(){
+	//Creamos el objeto AJAX
+	var miajax = nuevoAjax();
+
+	//Hago la petición a mi server
+	miajax.open('post','consulta.php',true);
+
+	//Función para cuando cambie el status
+	miajax.onreadystatechange = function(){
+		if(miajax.readyState == 4){
+			//Proceso el texto como JS
+			var json = eval(miajax.responseText);
+			//Obtengo el select
+			var select = document.getElementById("lista");
+			for(i in json){
+				var texto = document.createTextNode(json[i].nombre);
+				var option = document.createElement('option');
+				option.setAttribute('value',json[i].id);
+				option.appendChild(texto);
+				select.appendChild(option);
+			}
+
+			
+		}
+	}
+
+	miajax.send(null);
+}
+
+</script>
+</body>
+</html>
