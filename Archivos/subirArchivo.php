@@ -7,6 +7,6 @@ var_dump($_FILES);
 $name = $_FILES['archivo']['name'];
 
 $r = move_uploaded_file($_FILES['archivo']['tmp_name'], 
-												'/uploads/'.$name);
+												'uploads/'.$name);
 
 var_dump($r);
