@@ -1,0 +1,172 @@
+.error{
+    color:red;
+    font-style: italic; 
+    font-size: .8em;
+    margin-bottom: 4px; 
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: #045FB4;
+}
+
+a:active{
+    color: #01A9DB;
+}
+
+ul{
+    list-style: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    min-width: 340px;
+}
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+div.container-fluid{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+header{
+    position: absolute;
+    z-index: 1032;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    margin: 0px;
+    background-color: #03436A;
+    border-bottom: 2px solid black;
+ }
+
+header #header_logo{
+    float: left;
+}
+
+header #header_logo img{
+    float: left;
+    padding-top: 3.3em;
+    padding-left: 3em;
+}
+
+header #header_logo h1{
+    float: left;
+    padding-top: 1.35em;
+    padding-left: 0.15em;
+    margin: 0px;
+    color :#FFF;
+}
+
+header #header_opciones #nav_cuenta{
+    float: left;
+    padding-top: 1.6em;
+}
+
+
+header #header_opciones p{
+    float: left;
+    color: #FFF;
+    margin: 0px;
+    padding-top: 1.8em;
+}
+
+header ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header #nav_cuenta #opciones_cuenta{
+    border: 2px solid black;
+}
+
+header #nav_cuenta #opciones_cuenta li a{ 
+    padding: 10px 15px;
+    background: #FFF; 
+    display: block;
+}
+
+header #nav_cuenta #opciones_cuenta li a:hover{ 
+    background-color: #F2F2F2;
+}
+
+header #nav_cuenta li ul{
+    display: none;
+    position: absolute;
+    min-width: 180px;
+}
+
+header #nav_cuenta li:hover > ul {
+    display: block;
+}
+
+section.span9 h2{
+    padding-left: 0.5em;
+}
+
+.min_width_section{
+    min-width: 340px;
+}
+
+.menu_section{
+    position: relative; 
+    color: #610B0B;
+    padding: 40px 0 0 40px;
+}
+
+.menu_section a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: #B40404;
+}
+
+.menu_section a:active{
+    color: #FE2E2E;
+}
+
+.menu_section p{
+    position: relative; 
+    padding-bottom: 5%;
+    font-size: 2.1em;
+}
+
+.menu_section ul li{
+    font-size: 1.5em;
+    padding-bottom: 3%;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer #pie_pagina{
+    width: 94%;
+    padding: 0 3%;
+}
+
+footer #copyright{
+    width: 120px;
+    font-size: 0.8em;
+    padding-top: 0.5em; 
+    color: #848484;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/CursoProfesor.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/rubro.validacion.js"></script>
+
+		<div id="wrapper">		
+			<header>
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<h1>SmartClass</h1>
+				</div>
+				<div id="header_opciones">
+					<ul id="nav_cuenta">
+						<li><a href=""><img src="img/appbar.cog.png"></a>
+							<ul id="opciones_cuenta">
+								<li><a href="CambioContraseña.html">Cambiar Constraseña</a></li>
+								<li><a href="index.html">Salir</a></li>
+						    </ul>
+						</li>
+					</ul>
+					<p>Bienvenido Profesor@ &lt;Nombre&gt;</p>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<section class="min_width_section">
+						<form id="rubro_evaluacion">
+							<h2>&lt;Rubro&gt;</h2>
+							<label for="nombre_rubro">Nombre*</label>
+							<input type="text" id="nombre_rubro" name="nombre_rubro">
+							<label for="valor_rubro">Valor (%)*</label>
+							<input type="text" id="valor_rubro" name="valor_rubro">
+							<div id="div_checkbox_hoja" class="checkbox">
+								<label for="tiene_hoja"><input type="checkbox" id="tiene_hoja" name="tiene_hoja" value="rubro" checked="checked" onclick="estaActivado()">Tiene Hoja de Evaluación</label>
+							</div>
+							<label for="columnas_rubro">Número de columnas de la hoja</label>
+							<input type="text" id="columnas_rubro" name="columnas_rubro">
+							<input type="button" id="guardar_rubro" value="Guardar" onclick="validarFormRubro()"/>
+							<label>
+						</form>
+					</section>
+				</div>
+			</div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>
+		</div>	
+	</body>
+</html>	

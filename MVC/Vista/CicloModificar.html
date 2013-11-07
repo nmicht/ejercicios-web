@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/CicloEscolar.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/jquery-1.10.2.js"></script>
+  		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/ciclo.validacion.js"></script>
+
+		<script>
+  			$(function() {
+    			$( ".datepicker" ).datepicker();
+  			});
+  		</script>
+
+		<div id="wrapper">
+			<header>
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<h1>SmartClass</h1>
+				</div>
+				<div id="header_opciones">
+					<ul id="nav_cuenta">
+						<li><a href=""><img src="img/appbar.cog.png"></a>
+							<ul id="opciones_cuenta">
+								<li><a href="CambioContraseña.html">Cambiar Constraseña</a></li>
+								<li><a href="index.html">Salir</a></li>
+						    </ul>
+						</li>
+					</ul>
+					<p>&lt;Nombre&gt;,Administrador</p>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<section class="min_width_section">
+						<form id="form_ciclo">
+							<h2>Ciclo &lt;Ciclo&gt;</h2>
+							<label for="ciclo">Ciclo</label>
+							<select id="ciclo_select" name="ciclo_select">
+								<option value="0" disable="disable" selected >Selecciona ciclo</option>
+								<option value ="1">2013A</option>
+								<option value ="2">2013B</option>
+								<option value ="3">2014A</option>
+								<option value ="4">2014B</option>
+							</select>
+							<label for="inicio_curso">Inicio de Ciclo</label>
+							<input type="text" id="inicio_curso" name="inicio_curso" class="datepicker" readonly/>
+							<label for="fin_curso">Fin de Ciclo</label>
+							<input type="text" id="fin_curso" name="fin_curso" class="datepicker" readonly/>
+							<div id="dia_inhabil" class="dia_inhabil_agregado">
+								<label for="fecha_dia_inhabil">Fecha</label>
+								<input type="text" id="fecha_dia_inhabil" name="fecha_dia_inhabil" class="datepicker"readonly/>
+								<label for="descripcion">Descripcion</label>
+								<textarea id="descripcion" name="descripcion" rows="5" cols="10" wrap"hard"></textarea>
+							</div>
+							<label class="agregar_dia_inhabil" id="aregar_dia"><a href="#">+Agregar Día Inhábil</a></label>
+							<input type="button" value="Guardar" onclick="validarFormCE()"/>
+						</form>
+					</section>
+				</div>
+			</div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>
+		</div>	
+	</body>
+</html>		

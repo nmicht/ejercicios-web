@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es"> 
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/CambioContraseña.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/forms.js"></script>
+		<div id="wrapper">	
+			<header>
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<h1>SmartClass</h1>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<section>						
+						<form id="formulario">		
+							<h2>Cambio de contraseña</h2>
+							<br><br>			
+							<label for="pass_actual">Contraseña actual</label> 
+							<input type="password" id="pass_actual" name="pass_actual">
+							<label for="nuevo_pass">Nueva contraseña</label> 
+							<input type="password" id="nuevo_pass" name="nuevo_pass">
+							<label for="confirmacion">Confirmar nueva contraseña</label>
+							<input type="password" id="confirmacion" name="confirmacion"><br>							
+							<input type="button" class="btn" id="cambiar_pass" value="Cambiar Contraseña" onclick="validarFormCambioPass()"/>
+						</form>
+					</section>
+				</div>
+			</div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>	
+		</div>
+	</body>
+</html>	

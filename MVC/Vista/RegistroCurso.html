@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">			
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/RegistroCurso.css" rel="stylesheet">		
+	</head>
+	<body>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/forms.js"></script>
+		<div id="wrapper">		
+			<header>
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<h1>SmartClass</h1>
+				</div>
+				<div id="header_opciones">
+					<ul id="nav_cuenta">
+						<li><a href=""><img src="img/appbar.cog.png"></a>
+							<ul id="opciones_cuenta">
+								<li><a href="CambioContraseña.html">Cambiar Constraseña</a></li>
+								<li><a href="index.html">Salir</a></li>
+						    </ul>
+						</li>
+					</ul>
+					<p>Bienvenido Profesor@ &lt;Nombre&gt;</p>
+				</div>
+				<div class="clear"></div>				
+			</header>
+			<div class="container-fluid">
+				<h2>Captura Curso</h2>
+				<div class="row-fluid">
+					<section id="izquierdo">
+						<form id="alta_curso_izq">
+							<label for="nombre">Nombre</label>
+							<input type="text" id="nombre" name="nombre">
+							<label for="seccion">Sección</label>
+							<input type="text" id="seccion" name="seccion">
+							<label for="nrc">NRC</label>
+							<input type="text" id="nrc" name="nrc">
+							<label for="academia">Academia</label>
+							<input type="text" id="academia" name="academia" >
+							<label for="ciclo">Ciclo </label>
+							<select id="ciclo" name="ingenierias" >
+								<option value="0" disabled selected >Selecciona ciclo</option>
+								<option value ="1">2013A</option>
+								<option value ="2">2013B</option>
+								<option value ="3">2014A</option>
+								<option value ="4">2014B</option>
+							</select>
+						</form>  
+					</section>
+					<section id="derecho">
+						<form id="alta_curso_der">
+							<label id="hr">Lunes</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="lunes" value="08:30 PM"/>
+							<br><br><br>
+
+							<label id="hr">Martes</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="martes" value="08:30 PM"/>
+							<br><br><br>							
+							
+							<label id="hr">Miercoles</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="miercoles" value="08:30 PM"/>
+							<br><br><br>
+							
+							<label id="hr">Jueves</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="jueves" value="08:30 PM"/>
+							<br><br><br>
+							
+							<label id="hr">Viernes</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="viernes" value="08:30 PM"/>
+							<br><br><br>
+							
+							<label id="hr">Sabado</label>							
+							<select id="horasReg" name="horas_curso" >
+								<option value="0" disabled selected >Hrs/dia</option>
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+							</select>						
+							<p>Hora inicio</p>
+							<input id="time" name="sabado" value="08:30 PM"/>
+							<br><br><br>
+
+							<input class="btn" type="button" value="Registrar" onclick="validarFormRegistroCurso()"/>												
+						</form> 			
+					</section>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>	
+		</div>
+	</body>
+</html>	

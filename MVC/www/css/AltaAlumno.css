@@ -1,0 +1,90 @@
+header #header_opciones{
+    float: right;
+    width: 240px;
+    padding: 3.3em 2em 0em 0em;
+}
+
+section{
+    width: 100%;    
+}
+
+#alta_simple, #alta_archivo{
+    float: left;
+    width: 50%;
+    min-width: 280px;
+}
+
+#formulario_registro{
+    margin: auto;
+    padding: 2em 0em;
+    width: 250px;
+}
+
+#formulario_registro h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+#formulario_registro label{
+    margin: 0px;
+    padding: 0px;
+}
+
+#formulario_registro #enviar{
+    padding: .1em .8em .1em .8em;
+    background-color: #03436A;
+    color: white;
+}
+
+#contenedor_archivo{
+    width: 260px;
+    margin: auto;
+    padding: 260px 0;
+}
+
+@media ( max-width: 605px ){
+    header{
+        height: 120px;
+    }
+    
+    div.container-fluid{
+        padding-top: 130px;
+    }
+                
+    header #header_opciones{
+        float: left;
+        width: 240px;
+        padding: 0em 0em 0em 3em;
+    }
+
+    header #header_opciones #nav_cuenta{
+        float: left;
+        padding-top: 0.5em;
+    }
+
+    header #header_opciones p{
+        float: left;
+        color: #FFF;
+        margin: 0px;
+        padding-top: 0.7em;
+    }
+}
+
+@media ( max-width: 576px ){
+   #contenedor_archivo{
+        padding: 60px 0;
+    }
+    #alta_simple, #alta_archivo{
+        width: 100%;            
+    }
+}
+
+@media ( max-width: 340px ){
+    header #header_logo img{
+         padding-left: 0;
+    }
+    
+    header #header_opciones{
+        padding-left: 0;
+    }
+}

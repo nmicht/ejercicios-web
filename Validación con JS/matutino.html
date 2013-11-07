@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		.error{
+			color: red;
+			font-weight: bold;
+			background-color: #F3E2A9;
+			display: inline;
+		}
+		.obligatorio{
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="" method="post" name="cliente" id="cliente">
+
+		<label class="label">Nombre(s) <span class="obligatorio">*</span></label>
+		<input type="text" name="nombre" placeholder="Nombre..." required="required"/><br>
+
+		<label class="label">Apellido Paterno <span class="obligatorio">*</span></label>
+		<input type="text" name="apellidoPat" placeholder="Apellido paterno..." required="required"/><br>
+		
+		<label class="label">Apellido Materno <span class="obligatorio">*</span></label>
+		<input type="text" name="apellidoMat" placeholder="Apellido materno..." required="required"/><br>	
+
+		<label class="label">Email <span class="obligatorio">*</span></label>
+		<input type="email" name="email" placeholder="Ingrese Email" required="required"/><br>
+					
+					
+		<label class="label">Telefono </label>
+		<input type="tel" class="span2" name="telefono" placeholder="Telefono..." /><br>
+
+		
+		<label class="label">Status <span class="obligatorio">*</span></label>
+		<select id="status" name="status" placeholder="Status..." required="required">
+			<option value="0">Selecciona...</option>
+			<option value="1">Activo</option>
+			<option value="2">Baja Administrativa</option>
+			<option value="3">Artículo</option>
+		</select>
+		<br />
+
+		<button type="button" onclick="validaform()">Registrar</button>
+	
+	</form>
+
+	<script type="text/javascript" src="valida.js"></script>
+
+</body>
+</html>

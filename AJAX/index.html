@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Probando AJAX</title>
+	<script type="text/javascript" src="ajax.js"></script>
+</head>
+<body>
+<h1>Este es un contenido estático</h1>
+<button type="button" onclick="muestra()">Probar</button>
+<select id="lista" onChange="mostrarAlumno(this)">
+	<option value="0">Selecciona una opción</option>
+</select>
+
+
+<script type="text/javascript">
+function mostrarAlumno(miselect){
+	//Crear el objeto AJAX
+	var ajax = new nuevoAjax();
+
+	//Hacer la petición
+	ajax.open('post','datosAlumno.php',true);
+	ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+	//Enviar el id
+	var id = miselect.value;
+
+	//Escuchar el cambio de status de ajax
+	ajax.onreadystatechange = function(){
+		//Si mi status es de terminado
+		if(ajax.readyState == 4){
+			//Obtengo el resultado
+			console.log(ajax.responseText);
+			//var datos = eval(ajax.responseText);
+			//alert ( datos.correo );
+		}
+	}
+
+	ajax.send('idalumno='+id);
+
+
+}
+
+function muestra(){
+	//Creamos el objeto AJAX
+	var miajax = nuevoAjax();
+
+	//Hago la petición a mi server
+	miajax.open('post','consulta.php',true);
+
+	//Función para cuando cambie el status
+	miajax.onreadystatechange = function(){
+		if(miajax.readyState == 4){
+			//Proceso el texto como JS
+			var json = eval(miajax.responseText);
+			//Obtengo el select
+			var select = document.getElementById("lista");
+			for(i in json){
+				var texto = document.createTextNode(json[i].nombre);
+				var option = document.createElement('option');
+				option.setAttribute('value',json[i].id);
+				option.appendChild(texto);
+				select.appendChild(option);
+			}
+
+			
+		}
+	}
+
+	miajax.send(null);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es"> 
+	<head>
+		<title>SmartClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/EstiloBase.css" rel="stylesheet">
+		<link href="css/Recupera.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<script src="css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/forms.js"></script>
+
+		<div id="wrapper">	
+			<header href="index.html">
+				<div id="header_logo">
+					<img src="img/brain_white.png">
+					<a href="index.html"><h1>SmartClass</h1></a>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<section>						
+						<form id="formulario">		
+							<h2>Recupera tu contraseña</h2>			
+							<label for="mail">Correo</label> 
+							<input type="email" id="mail" name="mail">
+							<p>La contraseña será enviada a tu correo electrónico.</p>
+							<input type="button" id="enviar" value="Enviar" onclick="validarCorreo()"/>
+						</form>
+					</section>
+				</div>
+			</div>
+			<footer class="footer">
+				<div id="pie_pagina">
+					<hr>
+					<p id="copyright">© TwoHundred 2013</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>	

@@ -1,0 +1,45 @@
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<aside class="span3">
+						<nav id="menu_aside" class="well">
+							<ul class="nav nav-list">
+								<li class="nav-header">MENU PROFESOR</li>
+								<li><a href="AltaAlumno.html">Agregar Alumno</a></li>
+								<li><a href="#">Modificar/Eliminar Alumno</a></li>
+								<li><a href="Asistencias.html">Lista de asistencias</a></li>
+								<li><a href="Calificaciones.html">Lista de calificaciones</a></li>
+							</ul>
+						</nav>
+					</aside>
+					<section class="span9">
+						<h2>&lt;Nombre Curso&gt; - Alumnos</h2>
+						<div id="area_alumnos">
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th><i class="icon-remove"></i></th>
+										<th>Nombre</th>
+										<th>Código</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input type="checkbox" id="chbx{codigo}">
+										</td>
+										<td>
+											<a href="ModificarA.html">
+												{nombre}
+											</a>
+										</td>
+										<td>
+											{codigo}
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="btn btn-danger" type="submit">Eliminar</button>						
+						</div>
+					</section>
+				</div>
+			</div>
