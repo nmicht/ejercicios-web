@@ -31,7 +31,7 @@ function mostrarAlumno(miselect){
 		if(ajax.readyState == 4){
 			//Obtengo el resultado
 			console.log(ajax.responseText);
-			//var datos = eval(ajax.responseText);
+			//var datos = JSON.parse(ajax.responseText);
 			//alert ( datos.correo );
 		}
 	}
@@ -52,7 +52,7 @@ function muestra(){
 	miajax.onreadystatechange = function(){
 		if(miajax.readyState == 4){
 			//Proceso el texto como JS
-			var json = eval(miajax.responseText);
+			var json = JSON.parse(miajax.responseText);
 			//Obtengo el select
 			var select = document.getElementById("lista");
 			for(i in json){
